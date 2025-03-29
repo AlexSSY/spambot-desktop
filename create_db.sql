@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS sessions (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     phone TEXT UNIQUE NOT NULL,
-    session_data BLOB NOT NULL
-)
+    session_string TEXT NOT NULL
+);
