@@ -1,4 +1,4 @@
 aiosqlite
 telethon
 python-dotenv
-flask
+flask[async]
