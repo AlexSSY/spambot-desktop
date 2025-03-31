@@ -2,3 +2,6 @@ aiosqlite
 telethon
 python-dotenv
 flask[async]
+flask_cors
+pydantic
+flask-pydantic

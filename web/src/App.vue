@@ -1,13 +1,27 @@
-<script setup>
-</script>
-
 <template>
-  <h1 class="text-red-300">Hello World!</h1>
-  <nav>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-      </ul>
-    </nav>
-  <router-view></router-view>
+  <div class="grid-container">
+    <Left />
+    <Right />
+    <Header />
+    <Sidebar />
+    <Content />
+  </div>
 </template>
+
+<script>
+import Header from "./components/Header.vue";
+import Left from "./components/Left.vue";
+import Right from "./components/Right.vue";
+import Content from "./components/Content.vue";
+import Sidebar from "./components/Sidebar.vue";
+
+export default {
+  components: {
+    Header,
+    Left,
+    Right,
+    Content,
+    Sidebar,
+  },
+};
+</script>
